@@ -1,0 +1,54 @@
+/*初始化*/
+html,body{
+	padding: 0;
+	margin: 0;
+}
+ol,ul{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*header部分*/
+.header-language-background{
+	height: 30px;
+	padding: 5px;
+	background-color: #262626;
+	text-transform:uppercase;
+}
+.top-left-links{
+	float: left;
+}
+.top-left-links a{
+	line-height: 30px;
+	color:white;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.top-right-links{
+	float: right;
+	margin-right: 10px;
+}
+
+.top-right-links ul li{
+	float: left;
+	margin-left: 10px;
+	line-height: 30px;
+}
+.top-right-links ul li:after{
+	content: '.';
+	font-size: 20px;
+	position: relative;
+	top: -5px;
+	left: 5px;
+	color:white;
+}
+.top-right-links ul li:last-child:after{
+	content: '';
+}
+.top-right-links ul li a{
+	color: white;
+	text-decoration: none;
+}
+.top-right-links ul li span{
+	color: white;
+}
