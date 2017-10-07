@@ -1,0 +1,61 @@
+/*main的css样式*/
+.main{
+	max-width: 1460px;
+	margin: 0 auto;
+	padding: 20px 30px;
+}
+.slideshow_box{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.slideshow_box ul{
+	border: 10px solid #fff;
+	width: 400%;
+
+}
+.slideshow_box ul li{
+	float: left;
+	width: 25%;
+}
+.slideshow_box ul li img{
+	width: 100%;
+}
+.slideshow_box ol{
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translate(-50%,-50%);
+}
+.slideshow_box ol li{
+	float: left;
+	margin-left: 30px;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.btn_left_right{
+	display: none;
+}
+.btn_left_right a{
+	text-decoration: none;
+	color: #fff;
+	width: 42px;
+	height: 70px;
+	line-height: 70px;
+	font:400 22px/62px simsun;
+	text-align: center;
+	display: block;
+	background-color: rgba(0,0,0,.3);
+	position: absolute;
+}
+.btn_left_right .btn_left{
+	left: 10px;
+	top: 50%;
+}
+.btn_left_right .btn_right{
+	right:0px;
+	top:50%;
+}
