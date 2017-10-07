@@ -11,13 +11,18 @@
 	height: 602px;
 }
 .slideshow_box ul{
-	border: 10px solid #fff;
+	// border: 10px solid #fff;
 	width: 400%;
 	position: absolute;
 }
 .slideshow_box ul li{
 	float: left;
 	width: 25%;
+	height: 602px;
+}
+.slideshow_box ul li a{
+	display: inline-block;
+	width: 100%;
 }
 .slideshow_box ul li img{
 	width: 100%;

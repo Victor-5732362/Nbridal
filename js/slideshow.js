@@ -1,8 +1,15 @@
 window.onload = function(){
 	sshow();
+
 }
 
 function sshow(){
+	// window.onblur = function(){
+	// 	clearInterval(timer);
+	// }
+	// window.onfocus = function(){
+	// 	timer = setInterval(autoplay,3000)
+	// }
 	var box = document.getElementsByClassName('slideshow_box')[0];
 	var ul = box.children[0];
 	var ol = box.children[1];
