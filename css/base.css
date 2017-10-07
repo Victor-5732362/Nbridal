@@ -178,18 +178,32 @@ p{word-wrap:break-word}
 .countDownBox{
 	
 }
-.countDownBox ul li{
+.countDownBox .level1 li{
 	float: left;
 	margin-left: 5px;
+	position: relative;
 }
-.countDownBox ul li a{
+.countDownBox .level1 li ul{
+	display: none;
+	position: absolute;
+	width: 250px;
+	padding: 0 10px;
+	border: 1px solid #000;
+	z-index: 999;
+	background-color:#fff;
+}
+.countDownBox .level1 li ul li{
+	float: none;
+	font-size: 12px;
+}
+.countDownBox .level1 li a{
 	text-decoration: none;
 	display: inline-block;
 	color:#262626;
 	padding:10px;
 	text-transform: uppercase;
 }
-.countDownBox ul li a:hover {
+.countDownBox .level1 li a:hover {
 	background-color: #262626;
 	color:white;
 }

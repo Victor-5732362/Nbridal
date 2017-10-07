@@ -68,3 +68,137 @@
 	right:0px;
 	top:50%;
 }
+.main_widget{
+	margin: 20px 0px;
+	overflow: hidden;
+}
+.main_widget_product{
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #000;
+
+}
+.main_widget_product ul{
+	width: 100%;
+}
+.main_widget_product ul li{
+	text-align: center;
+	float: left;
+	width: 33.23333%;
+	border-right: 1px dotted #000;
+}
+.main_widget_product ul li a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #000;
+}
+.main_widget_product ul li a:hover{
+	color: #B403DB;
+	text-decoration:underline;
+}
+.main_widget_product ul li p{
+	margin-bottom: 10px;
+}
+.main_widget_product ul li:last-child{
+	border-right:none;
+}
+.main_product_img{
+	overflow: hidden;
+}
+.main_product_img ul li{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	// border: 1px solid #000;
+	margin-bottom: 10px;
+}
+.main_product_img ul li:nth-child(3n){
+	margin-right: 0;
+}
+.main_product_img ul li a{
+	display: block;
+	width: 100%;
+}
+.main_product_img ul li a img:hover{
+	box-shadow: 1px 1px 10px #ccc;
+}
+.main_product_img ul li a img{
+	width: 100%;
+}
+.main_hotsale{
+	overflow: hidden;
+}
+.hotsal_product ul li{
+	float: left;
+	width: 18.2222%;
+	margin-right: 2.22222%;
+}
+.hotsal_product ul li:last-child{
+	margin-right:0px;
+}
+.hotsal_product ul li a{
+	display: block;
+	margin-bottom: 20px;
+}
+.hotsal_product ul li a img{
+	width: 100%;
+}
+.hotsal_product ul li .product_img:hover{
+	box-shadow: 1px 1px 10px #ccc;
+}
+.hotsal_title{
+	margin-bottom: 20px;
+}
+.h2_t{
+	color: #636363;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.product_info h3 a{
+	font-size: 12px;
+    text-transform: capitalize;
+    text-align: left;
+    height: 33px;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: #636363;
+}
+.product_info h3 a:hover{
+	color: #c405ee;
+}
+.product_price .old_price{
+	color: #a0a0a0;
+    text-decoration: line-through;
+}
+.product_price .new_price{
+	float: right;
+	color: #c405ee;
+	font-size: 16px;
+}
+.main_styleGallery{
+	margin-top: 20px;
+}
+.styleg_title{
+	margin-bottom: 20px;
+}
+.style-g-All{
+	overflow-y: scroll;
+	height: 312px;
+}
+.ajaxloading{
+	width: 100%;
+    height: 100%;
+    background: url(../images/ajaxloading.gif) center center no-repeat;
+}
+#gettop{
+	background: #fafafa url(../images/web.png) no-repeat scroll -255px -94px;
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #f2f2f2;
+	bottom: 40px;
+	right: 15px;
+	display:none;
+}
