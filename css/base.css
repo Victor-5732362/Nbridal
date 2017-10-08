@@ -33,8 +33,11 @@ p{word-wrap:break-word}
 }
 /*header部分*/
 .header-language-background{
+	max-width: 1400px;
+
+	margin: 0 auto;
 	height: 30px;
-	padding: 5px;
+	padding: 5px 30px;
 	background-color: #262626;
 	text-transform:uppercase;
 }
@@ -208,6 +211,9 @@ p{word-wrap:break-word}
 	color:white;
 }
 .countDown{
+	padding: 0 30px;
+	max-width: 1400px;
+	margin: 0 auto;
 	height: 50px;
 	background-image: url('../images/nav-1400-com.jpg');
 	background-repeat: no-repeat;
@@ -346,4 +352,14 @@ p{word-wrap:break-word}
 	border-top:1px solid #ccc;
 	text-align: center;
 	font-size: 11px;
+}
+#gettop{
+	background: #fafafa url(../images/web.png) no-repeat scroll -255px -94px;
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #f2f2f2;
+	bottom: 40px;
+	right: 15px;
+	display:none;
 }

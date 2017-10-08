@@ -1,0 +1,253 @@
+.main{
+	padding: 30px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.breadcrumbs{
+	font-size: 12px;
+	color:#636363;
+	margin-bottom: 10px;
+}
+.breadcrumbs a{
+	color: #636363;
+	text-decoration: none;
+}
+.breadcrumbs a:hover{
+	text-decoration: underline;
+	color: #B403DB;
+}
+.breadcrumbs span{
+	padding: 0 7px;
+}
+.col-left{
+	width: 20%;
+	float: left;
+}
+.col-right{
+	width: 80%;
+	float: left;
+}
+.col-left dl dt{
+	padding: 7px 10px 7px 24px;
+	background-color: #eee;
+	position: relative;
+}
+.col-left dl dt:before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 4px solid rgba(0,0,0,0);
+    border-top: 4px solid #000;
+    border-right: 4px solid rgba(0,0,0,0);
+    border-bottom: 4px solid rgba(0,0,0,0);
+	position: relative;
+	top: 10px;
+	left: -15px;
+}
+.col-left dl dd a{
+	color: #636363;
+	text-decoration: none;
+	font-size: 13px;
+	margin: 3px;
+}
+.col-left dl dd a em{
+	background: rgba(0,0,0,0) url(..//images/web.png) no-repeat scroll 0 0;
+    display: inline-block;
+    height: 14px;
+    margin-right: 7px;
+    vertical-align: middle;
+    width: 14px;
+    background-position: -113px -76px!important;
+}
+.col-left dl dd a:hover{
+	color: #B403DB;
+	text-decoration: underline;
+}
+.col-right{
+	width: 80%;
+	float: left;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.col-right h1{
+	color: #000;
+	border-bottom: 1px solid #eee;
+	font-weight: 400;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+.narrow-by-list{
+	border-bottom: 1px solid #eee;
+}
+.narrow-by-list table tbody tr{
+	height: 60px;
+}
+.narrow-by-list table tbody tr td dt{
+	float: left;
+	width: 15%;
+	text-align: right;
+}
+.narrow-by-list table tbody tr td dd{
+	float: left;
+	width: 80%;
+	margin-left: 20px;
+}
+.narrow-by-list table tbody tr td dd ol li{
+	float: left;
+	margin-left: 10px;
+	display: inline-block;
+}
+.narrow-by-list table tbody tr td dd ol li a{
+	color: #000;
+	text-decoration: none;
+}
+.narrow-by-list table tbody tr td dd ol li a em{
+	background: rgba(0,0,0,0) url(../images/web.png) no-repeat scroll 0 0;
+    display: inline-block;
+    height: 14px;
+    margin-right: 7px;
+    vertical-align: middle;
+    width: 14px;
+    background-position: -36px -76px;
+}
+.narrow-by-list table tbody tr td dd ol li a:hover{
+	color: #B403DB;
+    text-decoration: underline;
+}
+.narrow-by-list table tbody tr td dd ol li a:hover em{
+	background-position: -54px -76px;
+}
+.narrow-by-list table tbody tr td dd ol li a img{
+	width: 50px;
+}
+.narrow-by-list table tbody tr td dd ol li a span.allcolors{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+.Pink{
+	background-color: pink;
+}
+.Black{
+	background-color: black;
+}
+.White{
+	background-color: white;
+}
+.Lilac{
+	background-color: #A895C3;
+}
+.Royal{
+	background-color: #0D4B9E;
+}
+// .bar-right .page{
+// 	float: left;
+// }
+.toolbar{
+	overflow: hidden;
+	margin: 10px 0;
+}
+.bar-left{
+	float: left;
+}
+.bar-right{
+	float: right;
+}
+.bar-right p{
+	float: left;
+	line-height: 30px;
+}
+.toolbar select{
+	height: 30px;
+}
+.page-option{
+	float: left;
+	line-height: 30px;
+	margin: 0 10px;
+}
+.pager-a{
+	float: left;
+}
+.pager-a ul li{
+	float: left;
+	margin-left: 5px;
+}
+.pager-a ul li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	// border: 1px solid #000;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+	color: #B403DB;
+}
+.pager-a ul li.current{
+	background-color: #c405ee;
+}
+.pager-a ul li.current a{
+	color: #fff;
+}
+.product-all{
+	overflow: hidden;
+}
+.product-all li{
+	float: left;
+	width: 23.33333%;
+	margin-right: 2.22222%;
+}
+.product-all li:nth-child(4n){
+	margin-right: 0;
+}
+.product-all li a{
+	color: #636363;
+}
+.product-all li a.product_img{
+	display: block;
+	
+}
+.product-all li a.product_img:hover{
+	box-shadow: 1px 1px 10px #ccc;
+}
+.product-all li a img{
+	width: 100%;
+}
+.product_info h3 a{
+	font-size:12px;
+	color:#636363;
+	text-decoration: none; 
+    text-transform: capitalize;
+    text-align: left;
+    overflow: hidden;
+    font-weight: 500;
+    line-height: 0;
+}
+.product_info h3 a:hover{
+	color: #B403DF;
+	text-decoration: underline;
+}
+.pick_color p a{
+	background-color: #EEEEEE;
+}
+.pick_color p a:hover{
+	color: #B403DF;
+
+}
+.product_price{
+	margin: 10px 0;
+}
+.old_price{
+	color: #a0a0a0;
+    text-decoration: line-through;
+}
+.new_price{
+	color: #c405ee;
+    float: right;
+}
+.product-all li{
+	border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
+.product-all li:hover{
+	border-bottom-color: #c405ee;
+}

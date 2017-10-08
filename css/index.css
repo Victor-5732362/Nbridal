@@ -192,13 +192,4 @@
     height: 100%;
     background: url(../images/ajaxloading.gif) center center no-repeat;
 }
-#gettop{
-	background: #fafafa url(../images/web.png) no-repeat scroll -255px -94px;
-	position: fixed;
-	width: 45px;
-	height: 45px;
-	border: 1px solid #f2f2f2;
-	bottom: 40px;
-	right: 15px;
-	display:none;
-}
+
