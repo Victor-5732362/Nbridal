@@ -21,7 +21,7 @@ function load_init(){
 	var timer=null;
 	var target = 0;  
 	var leader = 0;   
-	ToTop.onclick = function(){
+	EventListen.addEvent(ToTop,function(){
 		clearInterval(timer);
 			timer = setInterval(function(){
 			var step = (target-leader)/10;
@@ -32,25 +32,25 @@ function load_init(){
 				clearInterval(timer);
 			}
 		},30);
-	}
+	},'click');
 }
 function nav(){
 	var level1 = document.getElementsByClassName('level1')[0];
 	console.log(level1.children.length);
 	var level_li = level1.children;
 	for(var i=1;i<level_li.length;i++){
-		level_li[i].onmouseover =function(){
+		EventListen.addEvent(level_li[i],function(){
 			// console.log(this.children[1].className);
 			if(this.children[1]){
 				this.children[1].style.display='block';
 			}
-		}
-		level_li[i].onmouseout =function(){
+		},'mouseover');
+		EventListen.addEvent(level_li[i],function(){
 			// console.log(this.children[1].className);
 			if(this.children[1]){
 				this.children[1].style.display='none';
 			}
-		}
+		},'mouseout');
 	}
 }
 function scroll() {  
@@ -72,3 +72,19 @@ function scroll() {
         top: document.body.scrollTop
     }
 }
+//兼容写法
+EventListen = {
+       addEvent: function (ele,fn,str) {
+           //通过判断调用的方式兼容IE678
+           //判断浏览器是否支持该方法，如果支持那么调用，如果不支持换其他方法
+            if(ele.addEventListener){
+                //直接调用
+                ele.addEventListener(str,fn);
+            }else if(ele.attachEvent){
+                ele.attachEvent("on"+str,fn);
+            }else{
+                //在addEventListener和attachEvent都不存在的情况下，用此代码
+                ele["on"+str] = fn;
+            }
+        }
+    }

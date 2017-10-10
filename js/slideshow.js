@@ -1,8 +1,8 @@
-window.onload = function(){
-	sshow();
+// window.onload = function(){
+// 	sshow();
 
-}
-
+// }
+EventListen.addEvent(window,sshow,'load');
 function sshow(){
 	// window.onblur = function(){
 	// 	clearInterval(timer);
@@ -26,7 +26,7 @@ function sshow(){
 	olAllli[0].className='active';
 	for(var i=0;i<olAllli.length;i++){
 		olAllli[i].index = i;
-		olAllli[i].onmouseover = function(){
+		EventListen.addEvent(olAllli[i],function(){
 			for(var j=0;j<olAllli.length;j++){
 				olAllli[j].className = '';
 			}
@@ -35,7 +35,7 @@ function sshow(){
 			this.className = 'active';
 			animate(ul,-this.index*imgW);
 			// olAllli[this.index].className='active';
-		}
+		},'mouseover');
 	}
 	var timer = setInterval(autoplay,3000);
 	var key=0;
@@ -57,15 +57,15 @@ function sshow(){
 		}
 		olAllli[square].className='active';
 	}
-	box.onmouseover=function(){
+	EventListen.addEvent(box,function(){
 		clearInterval(timer);
 		btnLeftRight.style.display = 'block';
-	}
-	box.onmouseout=function(){
+	},'mouseover');
+	EventListen.addEvent(box,function(){
 		timer = setInterval(autoplay,3000);
 		btnLeftRight.style.display = 'none';
-	}
-	btnLeftRight.children[0].onclick = function(){
+	},'mouseout');
+	EventListen.addEvent(btnLeftRight.children[0],function(){
 		key--;
 		if(key<0){
 			ul.style.left= -(olAllli.length-1)*imgW+"px";
@@ -80,10 +80,8 @@ function sshow(){
 			olAllli[i].className='';
 		}
 		olAllli[square].className='active';
-	}
-	btnLeftRight.children[1].onclick = function(){
-		autoplay();
-	}
+	},'click');
+	EventListen.addEvent(btnLeftRight.children[1],autoplay,'click');
 	function animate(ele,target){
 		clearInterval(ele.timer);
 		var speed = target > ele.offsetLeft?10:-10;
